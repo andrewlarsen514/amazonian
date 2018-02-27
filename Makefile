@@ -1,5 +1,4 @@
 GOFILES = $(shell find . -name '*.go' -not -path './vendor/*')
-GOPACKAGES = $(shell go list ./...  | grep -v /amazonian/)
 default: build
 
 workdir:
